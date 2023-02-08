@@ -21,7 +21,6 @@ class Post(models.Model):
         ('toaster', 'Toaster'),
         ('valencia', 'Valencia'),
         ('walden', 'Walden'),
-        ('xpro2', 'X-pro II')
         ('art', 'Art'), ('cats', 'Cats'),
         ('dogs', 'Dogs'), ('food', 'Food'),
         ('nature', 'Nature'), ('photo', 'Photo'),
