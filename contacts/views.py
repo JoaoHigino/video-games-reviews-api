@@ -1,7 +1,7 @@
 from rest_framework import generics, permissions
 from .models import Contact
-from drf_api.permissions import IsOwnerOrReadOnly
-from .serializers import ContactSerializer
+from video_games_reviews_api.permissions import IsOwnerOrReadOnly
+from .serializer import ContactSerializer
 
 
 class ContactList(generics.ListCreateAPIView):
