@@ -1,5 +1,6 @@
 from rest_framework import serializers
 from posts.models import Post
+from favourites.models import Favourite
 from likes.models import Like
 
 
@@ -8,6 +9,7 @@ class PostSerializer(serializers.ModelSerializer):
     is_owner = serializers.SerializerMethodField()
     profile_id = serializers.ReadOnlyField(source='owner.profile.id')
     profile_image = serializers.ReadOnlyField(source='owner.profile.image.url')
+    favourite_id = serializers.SerializerMethodField()
     like_id = serializers.SerializerMethodField()
     likes_count = serializers.ReadOnlyField()
     comments_count = serializers.ReadOnlyField()
@@ -24,6 +26,15 @@ class PostSerializer(serializers.ModelSerializer):
                 'Image width larger than 4096px!'
             )
         return value
+
+    def get_favourite_id(self, obj):
+        user = self.context['request'].user
+        if user.is_authenticated:
+            favourite = Favourite.objects.filter(
+                owner=user, post=obj
+            ).first()
+            return favourite.id if favourite else None
+        None
 
     def get_is_owner(self, obj):
         request = self.context['request']
