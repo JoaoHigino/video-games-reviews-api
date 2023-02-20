@@ -10,7 +10,6 @@ class FavouriteList(generics.ListCreateAPIView):
     queryset = Favourite.objects.all()
 
     def perform_create(self, serializer):
-       
         serializer.save(owner=self.request.user)
 
 
