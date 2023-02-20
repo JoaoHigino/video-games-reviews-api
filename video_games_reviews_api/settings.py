@@ -39,14 +39,14 @@ JWT_AUTH_COOKIE = 'my-app-auth'
 JWT_AUTH_REFRESH_COOKIE = 'my-refresh-token'
 JWT_AUTH_SAMESITE = 'None'
 
-REST_AUTH_SERIALIZERS = {'USER_DETAILS_SERIALIZER': 'video_games_reviews_api.serializers.CurrentUserSerializer'},  # noqa
+REST_AUTH_SERIALIZERS = {'USER_DETAILS_SERIALIZER': 'video_games_reviews_api.serializers.CurrentUserSerializer'}
 
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-(x5nk8_8pp#ok^qysd^khhaa722*e16t98_m(59c_5n__%*qwq',  # noqa
+SECRET_KEY = 'django-insecure-(x5nk8_8pp#ok^qysd^khhaa722*e16t98_m(59c_5n__%*qwq'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEV' in os.environ
