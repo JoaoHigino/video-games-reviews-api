@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'video_games_reviews_api.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'video_games_reviews_api.settings'),  # noqa
 
 application = get_asgi_application()
