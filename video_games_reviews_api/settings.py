@@ -46,7 +46,7 @@ REST_AUTH_SERIALIZERS = {'USER_DETAILS_SERIALIZER': 'video_games_reviews_api.ser
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-(x5nk8_8pp#ok^qysd^khhaa722*e16t98_m(59c_5n__%*qwq'
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEV' in os.environ
