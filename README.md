@@ -17,12 +17,80 @@ This repository holds the Django Rest Framework (DRF) API database for the React
 
 ***
 
+## Validator Testing
 
-## Testing
-- All testing documentation can be found [here](/TESTS.md)
+- All python files passed through the PEP8 validator with no issues
+
+- Contacts
+
+![py](/docs/test/contactmodels.png) - Models
+
+![py](/docs/test/contactserializer.png) - Serializer
+
+![py](/docs/test/contactsviews.png) - Views
+
+- Likes
+
+![py](/docs/test/likesmodels.png) - Models
+
+![py](/docs/test/likesserializer.png) - Serializer
+
+![py](/docs/test/likesviews.png) - Views
+
+- Profiles
+
+![py](/docs/test/profilesodels.png) - Models
+
+![py](/docs/test/postsserialzer.png) - Serializer
+
+![py](/docs/test/profilesviews.png) - Views
+
+- Favourites
+
+![py](/docs/test/favouritesmodels.png) - Models
+
+![py](/docs/test/favouritesserializer.png) - Serializer
+
+![py](/docs/test/favouritesviews.png) - Views
+
+- Contact
+
+![py](/docs/test/contactmodels.png) - Models
+
+![py](/docs/test/contactserializer.png) - Serializer
+
+![py](/docs/test/contactsviews.png) - Views
+
+- Posts
+
+![py](/docs/test/postsmodels.png) - Models
+
+![py](/docs/test/postsserialzer.png) - Serializer
+
+![py](/docs/test/postsviews.png) - Views
 
 ***
+## Testing
 
+The following tests were carried out on the app:
+1. Manual testing of user stories
+2. Automated testing
+
+### Manual testing of user stories
+
+- As an admin, I want to be able to create, edit and delete the users, posts, comments and likes, so that I can have a control over the content of the application and remove any potential inappropriate content
+
+**Test** | **Action** | **Expected Result** | **Actual Result**
+-------- | ------------------- | ------------------- | -----------------
+User | Create, update & delete user | A user can be created, edited or deleted | Works as expected
+User | Change permissions | User permissions can be updated | Works as expected
+Profile | Create, update & delete | User profile can be created, edited or deleted | Works as expected
+Post | Create, update & delete | A post can be created, edited or deleted | Works as expected
+Comment | Create, update & delete | A comment can be created, edited or deleted | Works as expected
+Like | Create & delete | A like can be created or deleted (like / unlike post) | Works as expected
+Follower | Create & delete | Follow or unfollow user | Works as expected
+
+***
 ## Bugs
 
 ### Unfixed
