@@ -49,7 +49,7 @@ REST_AUTH_SERIALIZERS = {'USER_DETAILS_SERIALIZER': 'video_games_reviews_api.ser
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
    os.environ.get('ALLOWED_HOST'),
