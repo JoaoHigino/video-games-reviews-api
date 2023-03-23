@@ -577,7 +577,7 @@ if 'CLIENT_ORIGIN_DEV' in os.environ:
 
 ## Credits
 
-- Code Institute's Moments project was used to lay the foundations of this project and was adapted on to create a unique project. (https://github.com/Code-Institute-Solutions/moments/tree/bb6657e265fb18360b841e10d9d633dad06f4e5c)
+- Code Institute's Moments project was used to lay the foundations of this project and was adapted on to create a unique project. 
 
 - To my amazing wife Sandra, my best friend, my mentor, and my safe haven, without her, all my dreams will be impossible to achieve. She is everything.
 
