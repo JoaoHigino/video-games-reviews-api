@@ -80,7 +80,6 @@ Posts:
 
 Backend Manual Testing
 
-
 |Area|Test|Result|
 |---|---|----|
 |Deployed site|Home shows message and no errors|PASS|
@@ -90,11 +89,11 @@ Backend Manual Testing
 ||/posts/:id shows single post|PASS|
 ||/comments/shows all comments|PASS|
 ||/comments/:id shows single comment|PASS|
+||/favourites/shows all favourites|PASS|
+||/likes/shows all likes|PASS|
 ||/admin/ allows superuser to login|PASS|
 ||/admin/ basic admin view and functions|PASS|
 |Dev site|/posts/ show pagination|PASS|
-||/comments/ show pagination|PASS|
-||/profiles/ show pagination|PASS|
 ||/posts/ show text search by user__username|PASS|
 ||/admin/ shows login for Superuser and then loads admin panel|PASS|
 
