@@ -228,7 +228,7 @@ repository by using the following steps...
 1. From the menu towards the top of the page select the 'Settings' section and lick 'Reveal Config Vars' in the Config vars section. Enter the following key / value pairings:
     1. Key as `ALLOWED_HOSTS` and the value as the name of you project with '.herokuapp.com' appended to the end e.g.  `example-app.herokuapp.com`. Click the Add button.
     1. Key as `CLOUDINARY_URL` and the value as your cloudinary API Environment variable e.g. `cloudinary://**************:**************@*********`. Click the Add button.
-    1. Key as `SECRET_KEY` and the value as a complex string which will be used to provide cryptographic signing. The use of a secret key generator is recommended such as [https://djecrety.ir](https://djecrety.ir/). Click the Add button.
+    1. Key as `SECRET_KEY` and the value as a complex string which will be used to provide cryptographic signing. Click the Add button.
     1. Ensure the key `DATABASE_URL` is already populated. This should have been created automatically by Heroku.
     1. The `DATABASE_URL` should be copied into your local `.env`, created during the cloning process.(Add the address to your ElephantSQL respository)
     1. To make authenticated requests to this API (e.g. from a fontend application) you are required to add the key `CLIENT_ORIGIN` with the value set as the URL you will be sending the authentication request from.
@@ -241,7 +241,6 @@ repository by using the following steps...
 1. At the bottom of the page find the section named 'Manual deploy', select the 'main' branch in the drop down and click the 'Deploy' button.
 1. Once deployment is complete, click the 'View' button to load the URL of the deployed application.
 
-<hr>
 
 ***
 
