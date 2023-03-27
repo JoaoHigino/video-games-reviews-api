@@ -155,6 +155,8 @@ None identified
 - [drawSQL](https://drawsql.app/) - Create Database Schema/ERD
 - [GitPod](https://www.gitpod.io/)
 - [GitHub](https://github.com/)
+- [Heroku](https://heroku.com/)
+
 
 <hr>
 
@@ -228,7 +230,7 @@ repository by using the following steps...
     1. Key as `CLOUDINARY_URL` and the value as your cloudinary API Environment variable e.g. `cloudinary://**************:**************@*********`. Click the Add button.
     1. Key as `SECRET_KEY` and the value as a complex string which will be used to provide cryptographic signing. The use of a secret key generator is recommended such as [https://djecrety.ir](https://djecrety.ir/). Click the Add button.
     1. Ensure the key `DATABASE_URL` is already populated. This should have been created automatically by Heroku.
-    1. The `DATABASE_URL` should be copied into your local `.env`, created during the cloning process.
+    1. The `DATABASE_URL` should be copied into your local `.env`, created during the cloning process.(Add the address to your ElephantSQL respository)
     1. To make authenticated requests to this API (e.g. from a fontend application) you are required to add the key `CLIENT_ORIGIN` with the value set as the URL you will be sending the authentication request from.
     1. Additionally, a `CLIENT_ORIGIN_DEV` key can be set with the value of a development server (IP or URL) for use during local development.
 1. Open the `.env` file in the project directory and delete the key / value pair `DEV_ENVIRONMENT_DATABASE = True` before saving the file. This can be added back after the next step to ensure local development changes will not alter the remote database.
